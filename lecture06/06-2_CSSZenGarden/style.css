@@ -4,6 +4,7 @@
 :root {
     --yellow: #fccf0a;
     --darkgrey: #5a5b5e;
+    --stdwidth: 400px;
 }
 
 /* Standard values */
@@ -13,7 +14,7 @@
 
 body {
 	margin: 0;
-	padding: 0 10px;
+	padding: 0 25px;
 	box-sizing: border-box;
     font-family: 'Copperplate Gothic Light', serif;
     color: white;
@@ -22,9 +23,20 @@ body {
     text-decoration: none;
 }
 
+h3 {
+    margin-top: 25px;
+    border-bottom: 2px solid var(--yellow);
+    color: var(--yellow);
+    width: 100%;
+}
+
 a {
     text-decoration: none;
-    color: inherit;
+    color: lightskyblue;
+}
+
+a:hover {
+    color: purple;
 }
 
 header {
@@ -36,22 +48,69 @@ header {
     margin-top: 10px;
 }
 
-h3 {
-    margin-top: 25px;
-    border-bottom: 2px solid var(--yellow);
-    color: var(--yellow);
-    width: 100%;
-}
-
-.intro {
-    display: block;
-    border: 10px black;
-}
-
-
 h2 {
     font-size: 1em;
 }
+
+.summary {
+    font-style: italic;
+}
+
+#zen-preamble {
+    max-width: var(--stdwidth);
+    align-self: center;
+    margin: auto;
+}
+
+.preamble p:nth-child(3) {
+    padding-right: 120px;
+    background: url("https://www.shareicon.net/data/256x256/2016/08/18/815482_safe_512x512.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100px;
+}
+
+#zen-explanation {
+    padding: 10px;
+    background: #222222;
+    border-left: 15px solid #444444;
+    border-top: 15px solid #333333;
+    border-right: 25px solid #111111;
+    border-bottom: 25px solid #000000;
+}
+
+
+.main div {
+    max-width: var(--stdwidth);
+    margin: auto;
+}
+
+#zen-benefits {
+    display: block;
+    position: relative;
+    margin-bottom: 230px;
+}
+
+#zen-benefits::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    background: url("https://eshoreltd.com/wp-content/uploads/2016/10/Benefits-Circle-Icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+/* url for a good crane icon https://cdn-icons-png.flaticon.com/512/3129/3129488.png */
+
 
 @media only screen and (min-width: 420px) {
     /* Tablets and small laptops */
