@@ -1,29 +1,51 @@
-/* css Zen Garden default style v1.02 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* css Zen Garden by Andreas Guldborg Hansen v1.0 */
 
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+/* Variables to be used throughout the file */
+:root {
+    --yellow: #fccf0a;
+    --darkgrey: #5a5b5e;
+}
 
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-
-
-/* basic elements */
+/* Standard values */
 * {
+    text-decoration: inherit;
+}
+
+body {
 	margin: 0;
-	padding: 0;
-	box-sizing: border-content;
+	padding: 0 10px;
+	box-sizing: border-box;
+    font-family: 'Copperplate Gothic Light', serif;
+    color: white;
+    background: var(--darkgrey);
+    width: auto;
+    text-decoration: none;
 }
 
-.intro header {
-    background-image: url("https://www.xmple.com/wallpaper/black-lines-grey-stripes-streaks-1920x1080-c2-a9a9a9-000000-l2-33-33-a-300-f-1.svg");
-    color: #FFFFFF;
-    width: 100%;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    border: 10px solid;
+    border-image: url("https://img.freepik.com/free-vector/black-yellow-caution-tape-vector_97458-532.jpg") 20;
+    background: black;
+    color: var(--yellow);
     padding: 10px;
+    margin-top: 10px;
 }
 
-.intro div {
+h3 {
+    margin-top: 25px;
+    border-bottom: 2px solid var(--yellow);
+    color: var(--yellow);
+    width: 100%;
+}
 
+.intro {
+    display: block;
+    border: 10px black;
 }
 
 
@@ -38,5 +60,7 @@ h2 {
 
 @media only screen and (min-width: 1000px) {
     /* Larger screens */
-
+    abbr {
+        text-decoration: underline;
+    }
 }
